@@ -1554,14 +1554,13 @@ ul, ol { padding: 0; list-style: none; }
 /* ---------- Responsive ---------- */
 @media (max-width: 1180px) {
   .header-phone { display: none; }
-  .hero-card { width: 17rem; }
+  .hero-card { display: none; }
+  .hero-inner { grid-template-columns: 1fr; }
   .values-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 980px) {
   :root { --header-h: 76px; }
-  .hero-inner { grid-template-columns: 1fr; }
-  .hero-card { display: none; }
   .hero { min-height: min(94svh, 860px); }
   .hero-foot__loc { display: none; }
   .stats-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem 1.5rem; }
